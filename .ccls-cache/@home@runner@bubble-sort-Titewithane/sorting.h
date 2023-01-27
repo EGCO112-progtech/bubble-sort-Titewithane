@@ -24,7 +24,7 @@ void swap(int *a, int *b) {
   *b = temp;
 }
 
-int Isprime(int *a){
+/*int Isprime(int *a){
   int pri = 1;
   for(int i = 2;i<100;i++){
     if(*a % i == 0){
@@ -35,7 +35,7 @@ int Isprime(int *a){
   }
   if(*a == 1) pri = 0;
   return pri;
-}
+}*/
 
 void bubbleSort(int a[], int n) {
 

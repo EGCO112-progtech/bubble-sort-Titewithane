@@ -2,6 +2,19 @@
 #include <stdlib.h>
 #include "sorting.h"
 
+int Isprime(int *a){
+  int pri = 1;
+  for(int i = 2;i<100;i++){
+    if(*a % i == 0){
+      if(i != *a){
+        pri = 0;
+      }
+    }
+  }
+  if(*a == 1) pri = 0;
+  return pri;
+}
+
 int main(int argc, char *argv[]) {
   int *a,N,*prime,count = 0;
   N = argc - 1;
