@@ -4,12 +4,8 @@
 
 int Isprime(int *a){
   int pri = 1;
-  for(int i = 2;i<100;i++){
-    if(*a % i == 0){
-      if(i != *a){
-        pri = 0;
-      }
-    }
+  for(int i = 2;i<*a;i++){
+    if(*a % i == 0) pri = 0;
   }
   if(*a == 1) pri = 0;
   return pri;
@@ -29,9 +25,7 @@ int main(int argc, char *argv[]) {
   }
   if(count == 0) printf("No prime\n");
   
-  
-
-  display(a,N);
+  display(prime,count);
   bubbleSort(prime,count); 
    //insertion(a,N);
 
