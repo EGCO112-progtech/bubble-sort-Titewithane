@@ -29,7 +29,7 @@ int Isprime(int *a){
   for(int i = 2;i<100;i++){
     if(*a % i == 0){
       if(i != *a){
-        pri = 0; // not prime
+        pri = 0;
       }
     }
   }
