@@ -24,14 +24,14 @@ int main(int argc, char *argv[]) {
     }
   }
   if(count == 0) printf("No prime\n");
-  
-  display(prime,count);
-  bubbleSort(prime,count); 
+  else{
+    display(prime,count);
+    bubbleSort(prime,count); 
    //insertion(a,N);
 
   // selectionSort(a,N);
-  display(prime,count);
-  
+    display(prime,count);
+  }
  return 0;
 }
 
